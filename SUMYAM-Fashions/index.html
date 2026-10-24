@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f3ee">
+  <meta name="description" content="Discover considered pieces for everyday elegance at SUMYAM Fashions.">
+  <title>SUMYAM Fashions — A quieter kind of statement</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span>New season, new stories</span><span class="announcement-rule" aria-hidden="true"></span><a href="#featured">Explore the collection <span aria-hidden="true">↗</span></a></div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#home" aria-label="SUMYAM Fashions home"><span class="wordmark-main">SUMYAM</span><span class="wordmark-sub">FASHIONS</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#featured">Shop</a><a href="#featured" data-shop-filter="women">Women</a><a href="#featured" data-shop-filter="men">Men</a><a href="#collections">Collections</a><a href="#story">About</a>
+      </nav>
+      <div class="header-actions">
+        <a class="search-shortcut" href="#featured" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"></circle><path d="m16 16 4.5 4.5"></path></svg><span>Search</span></a>
+        <a class="bag-link" href="#featured" aria-label="Shopping bag, 0 items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8.5h14l1 12H4l1-12Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span>Bag</span><span class="bag-count" aria-live="polite">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Fashion portrait of a model in bold streetwear against a vivid blue sky"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> The new season · 2026</p>
+        <h1 id="hero-title">A quieter kind<br>of <em>statement.</em></h1>
+        <p class="hero-description">Considered forms. Natural textures. Pieces that feel like you, every day.</p>
+        <div class="hero-actions"><a class="button button-light" href="#featured">Shop the collection <span aria-hidden="true">↗</span></a><a class="text-link hero-story-link" href="#story">Discover our story <span aria-hidden="true">→</span></a></div>
+      </div>
+      <div class="hero-note"><span>01 / 04</span><span class="hero-note-line"></span><span>Form, feeling, forever</span></div>
+      <a class="hero-scroll" href="#collections"><span>Scroll to explore</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="intro-strip" aria-label="Brand approach"><p>Thoughtfully made</p><span aria-hidden="true">✳</span><p>Made to be lived in</p><span aria-hidden="true">✳</span><p>Always your own</p></section>
+
+    <section class="section collections-section" id="collections" aria-labelledby="collections-title">
+      <div class="section-heading"><div><p class="eyebrow">Find your point of view</p><h2 id="collections-title">Collections to <em>come back to.</em></h2></div><p class="section-aside">The pieces you reach for.<br>The ones that feel like you.</p></div>
+      <div class="collection-grid">
+        <a class="collection-card collection-women" href="#featured" data-collection="women"><img src="assets/images/collection-women.jpg" alt="Woman in a powder blue coat and scarf before ornate city architecture" loading="lazy"><span class="collection-index">01 — WOMEN</span><span class="collection-bottom"><span><strong>Women</strong><small>Soft structure, effortless presence</small></span><span class="round-arrow" aria-hidden="true">↗</span></span></a>
+        <a class="collection-card collection-men" href="#featured" data-collection="men"><img src="assets/images/collection-men.jpg" alt="Portrait of a man in a dark textured knit sweater" loading="lazy"><span class="collection-index">02 — MEN</span><span class="collection-bottom"><span><strong>Men</strong><small>Modern ease, considered detail</small></span><span class="round-arrow" aria-hidden="true">↗</span></span></a>
+        <a class="collection-card collection-essentials" href="#featured" data-collection="essentials"><img src="assets/images/collection-essentials.jpg" alt="Timeless wardrobe essentials in soft natural fabrics" loading="lazy"><span class="collection-index">03 — EVERYDAY</span><span class="collection-bottom"><span><strong>Everyday essentials</strong><small>Good things, on repeat</small></span><span class="round-arrow" aria-hidden="true">↗</span></span></a>
+      </div>
+    </section>
+
+    <section class="section featured-section" id="featured" aria-labelledby="featured-title">
+      <div class="section-heading featured-heading"><div><p class="eyebrow">The edit / 01</p><h2 id="featured-title">Good things, <em>well chosen.</em></h2></div><a class="text-link desktop-shop-link" href="#product-grid">View all pieces <span aria-hidden="true">→</span></a></div>
+      <div class="shop-tools"><div class="filter-list" role="group" aria-label="Filter products by collection"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All pieces <span>08</span></button><button class="filter-button" type="button" data-filter="women" aria-pressed="false">Women</button><button class="filter-button" type="button" data-filter="men" aria-pressed="false">Men</button><button class="filter-button" type="button" data-filter="essentials" aria-pressed="false">Essentials</button></div><label class="search-field"><span class="visually-hidden">Search products</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"></circle><path d="m16 16 4.5 4.5"></path></svg><input id="product-search" type="search" placeholder="Find a piece" autocomplete="off"></label></div>
+      <p class="results-message" id="results-message" aria-live="polite"></p>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="men essentials" data-name="Patterned cotton shirt" data-description="A relaxed blue cotton shirt with a subtle all-over print." data-price="5900"><div class="product-image"><img src="assets/images/product-linen-shirt.jpg" alt="Blue button-up shirt with a small white pattern on a hanger" loading="lazy"><span class="product-tag">Bestseller</span></div><div class="product-info"><div><p class="product-category">MEN · COTTON</p><h3>Patterned Cotton Shirt</h3><p class="product-tone">Slate blue</p></div><span class="product-price">₹5,900</span></div><button class="add-button" type="button" data-add="Patterned Cotton Shirt">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="women essentials" data-name="Soft cotton pull-on trouser" data-description="An easy tapered cotton trouser with a relaxed elastic waist." data-price="7200"><div class="product-image"><img src="assets/images/product-trousers.jpg" alt="Dusty rose cotton pull-on trousers with a relaxed tapered leg" loading="lazy"><span class="product-tag">New in</span></div><div class="product-info"><div><p class="product-category">WOMEN · EASY COTTON</p><h3>Soft Cotton Pull-on Trouser</h3><p class="product-tone">Faded rose</p></div><span class="product-price">₹7,200</span></div><button class="add-button" type="button" data-add="Soft Cotton Pull-on Trouser">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="men women essentials" data-name="Graphic cotton tee" data-description="A substantial cotton tee with a bold graphic print." data-price="2900"><div class="product-image"><img src="assets/images/product-cotton-tee.jpg" alt="Cream T-shirt with a bold blue graphic print" loading="lazy"></div><div class="product-info"><div><p class="product-category">EVERYDAY · COTTON</p><h3>Graphic Cotton Tee</h3><p class="product-tone">Cream with blue print</p></div><span class="product-price">₹2,900</span></div><button class="add-button" type="button" data-add="Graphic Cotton Tee">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="men women" data-name="Modern bomber jacket" data-description="A softly finished zip-front jacket with an easy everyday shape." data-price="12900"><div class="product-image"><img src="assets/images/product-blazer.jpg" alt="Warm brown zip-front bomber jacket on a hanger" loading="lazy"><span class="product-tag">Limited edit</span></div><div class="product-info"><div><p class="product-category">UNISEX · LIGHT LAYER</p><h3>Modern Bomber Jacket</h3><p class="product-tone">Burnished clay</p></div><span class="product-price">₹12,900</span></div><button class="add-button" type="button" data-add="Modern Bomber Jacket">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="women" data-name="Statement occasion dress" data-description="A full skirt and clean sleeveless shape for celebratory days." data-price="8900"><div class="product-image"><img src="assets/images/product-dress.jpg" alt="Bright red full-length sleeveless dress in a garden" loading="lazy"></div><div class="product-info"><div><p class="product-category">WOMEN · OCCASION EDIT</p><h3>Statement Occasion Dress</h3><p class="product-tone">Poppy red</p></div><span class="product-price">₹8,900</span></div><button class="add-button" type="button" data-add="Statement Occasion Dress">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="men women essentials" data-name="Printed cotton tee" data-description="A soft, substantial tee finished with a bold graphic print." data-price="6400"><div class="product-image"><img src="assets/images/product-knit.jpg" alt="Off-white T-shirt with a blue illustrated graphic and lettering" loading="lazy"><span class="product-tag">Bestseller</span></div><div class="product-info"><div><p class="product-category">EVERYDAY · COTTON</p><h3>Printed Cotton Tee</h3><p class="product-tone">Natural with blue print</p></div><span class="product-price">₹6,400</span></div><button class="add-button" type="button" data-add="Printed Cotton Tee">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="men women" data-name="Relaxed fit denim" data-description="Soft washed denim with a considered, easy fit." data-price="6900"><div class="product-image"><img src="assets/images/product-denim.jpg" alt="Relaxed blue denim jeans with a clean silhouette" loading="lazy"></div><div class="product-info"><div><p class="product-category">UNISEX · SOFT DENIM</p><h3>Relaxed Fit Denim</h3><p class="product-tone">Washed indigo</p></div><span class="product-price">₹6,900</span></div><button class="add-button" type="button" data-add="Relaxed Fit Denim">Add to bag <span aria-hidden="true">+</span></button></article>
+        <article class="product-card" data-category="men essentials" data-name="Leather moto jacket" data-description="A classic black leather moto jacket with considered metal details." data-price="10900"><div class="product-image"><img src="assets/images/product-jacket.jpg" alt="Black leather moto jacket with zips on a hanger" loading="lazy"><span class="product-tag">New in</span></div><div class="product-info"><div><p class="product-category">MEN · LEATHER</p><h3>Leather Moto Jacket</h3><p class="product-tone">Black</p></div><span class="product-price">₹10,900</span></div><button class="add-button" type="button" data-add="Leather Moto Jacket">Add to bag <span aria-hidden="true">+</span></button></article>
+      </div>
+      <p class="empty-results" id="empty-results" aria-live="polite" hidden>No pieces found. Try another search or choose a different collection.</p>
+      <div class="mobile-shop-link"><a class="text-link" href="#product-grid">Discover all pieces <span aria-hidden="true">→</span></a></div>
+    </section>
+
+    <section class="campaign" aria-labelledby="campaign-title"><div class="campaign-ornament" aria-hidden="true">S</div><div class="campaign-content"><p class="eyebrow">The SUMYAM point of view</p><h2 id="campaign-title">Less, but with<br><em>more meaning.</em></h2><p>Pieces chosen with care. Worn your way. Kept for longer.</p><a class="button button-outline-light" href="#collections">Explore the edit <span aria-hidden="true">↗</span></a></div><span class="campaign-caption">A study in everyday elegance <span>·</span> No. 06</span></section>
+
+    <section class="story-section" id="story" aria-labelledby="story-title"><div class="story-image-wrap"><img src="assets/images/story.jpg" alt="Sunlit natural textures and thoughtfully arranged wardrobe pieces" loading="lazy"><span class="story-image-note">Objects for living</span></div><div class="story-copy"><p class="eyebrow">A little about us</p><h2 id="story-title">Made for the life<br>you <em>actually live.</em></h2><p>We believe getting dressed can be a small, lovely ritual. SUMYAM brings together thoughtful shapes, tactile fabrics and lasting details — designed to move with you, and feel like your own from the very first wear.</p><p>Not more. Just better considered.</p><a class="text-link" href="#newsletter">A note from SUMYAM <span aria-hidden="true">→</span></a><span class="story-mark" aria-hidden="true">S.</span></div></section>
+
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title"><div class="newsletter-copy"><p class="eyebrow">Letters from SUMYAM</p><h2 id="newsletter-title">A little inspiration,<br><em>now and then.</em></h2><p>New pieces, thoughtful notes, and things worth keeping. Never too much.</p></div><form class="newsletter-form" id="newsletter-form" novalidate><label for="email">Your email address</label><div class="email-row"><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="newsletter-note newsletter-status"><button class="button button-dark" type="submit">Sign me up <span aria-hidden="true">→</span></button></div><p id="newsletter-note" class="newsletter-note">A front-end demo only — this form does not send or store your information.</p><p id="newsletter-status" class="form-status" aria-live="polite"></p></form></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="wordmark wordmark-footer" href="#home" aria-label="SUMYAM Fashions home"><span class="wordmark-main">SUMYAM</span><span class="wordmark-sub">FASHIONS</span></a><p>Considered pieces for the way<br>you choose to live.</p></div><div class="footer-column"><h2>Explore</h2><a href="#featured" data-shop-filter="women">Women</a><a href="#featured" data-shop-filter="men">Men</a><a href="#featured" data-shop-filter="essentials">Everyday essentials</a><a href="#featured">New arrivals</a></div><div class="footer-column"><h2>Here to help</h2><a href="mailto:hello@sumyam.example?subject=Care%20and%20details">Care &amp; details</a><a href="mailto:hello@sumyam.example?subject=Delivery%20information">Delivery information</a><a href="#newsletter">Newsletter</a></div><div class="footer-column footer-contact"><h2>Say hello</h2><p>Have a question about a piece?</p><a href="mailto:hello@sumyam.example">hello@sumyam.example</a><small>Demonstration contact address</small></div></div><div class="footer-bottom"><span>© <span id="current-year"></span> SUMYAM Fashions</span><span>Made with care, for everyday.</span><a href="#home">Back to top ↑</a></div></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
